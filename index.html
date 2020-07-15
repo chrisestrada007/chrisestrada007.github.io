@@ -1,31 +1,273 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
-</head>
-
+    <style>
+    body {padding-left: 5%; padding-right: 5%}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hire Me!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </head>
 <body>
-  <h1>Chris Estrada</h1>
-  <br>
-  <br>
-  <img src="https://s7d1.scene7.com/is/image/PETCO/153044-left-1?$ProductDetail-large$" alt="Selfie pic">
-  <br>
-  <h2>Hi there and thanks for coming to my page!  I'm Chris Estrada, aspiring data scientist. I'm looking for work in the SF Bay Area in data analytics.</h2>
-  <h2>If you'd like to talk about my experience or go over any oppourtunities, please contact me atany of the links below!</h2>
-  <br>
-  <ul>
-    <li><a href="https://www.linkedin.com/in/christopher-e-4984021a/" target="_blank">Linkedin</a></li>
-    <li><a href="http://www.twitter.com/wishcoingames" target="_blank">Twitter</a></li>
-  </ul>
-  <br>
-  <table>
-    <tr>
-      <th>Movies</th>
-      <th>Games</th>
-      <th>Plants</th>
-    </tr>
-  </table>
+    <nav class="navbar navbar-light bg-info text-white navbar-expand-md fixed-top">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mynav" aria-controls="mynav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>        
+        <div id="mynav" class="collapse navbar-collapse"><h5>Christopher Estrada</h5>
+            <div id="mynav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a href="#coverletter" class="nav-link text-white">Cover Letter</a></li>
+                  <li class="nav-item"><a href="#hardskills" class="nav-link text-white">Hard skills</a></li>
+                  <li class="nav-item"><a href="#softskills" class="nav-link text-white">Soft skills</a></li>
+                  <li class="nav-item"><a href="#experience" class="nav-link text-white">Experience</a></li>
+                  <li class="nav-item"><a href="#projects" class="nav-link text-white">Projects</a></li>
+                  <li class="nav-item"><a href="#education" class="nav-link text-white">Education</a></li>
+                  <li class="nav-item"><a href="#contact" class="nav-link text-white">Contact</a></li>     
+                </ul>
+            </div> 
+        </div>
+    </nav> 
+    <div class="jumbotron bg-light" id="coverletter"> 
+            <div class="row">
+                <div class="col-md">
+                    <br>
+                    <br>
+                    <img src="Headshot.jpg" style="vertical-align: middle; max-width:75%; height:auto; padding: 5%">
+                </div>
+                <div class="col-md">
+                    <h1 class="display-5 font-weight-normal text-justify" style="padding: 10%"><br><strong>Data-driven Office Manager and Analyst</strong>, with a BSBA in <strong>International Business</strong> and a speciality in <strong>Data Analytics</strong>.</h1>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md">    
+                    <h1 class="display-5 ml-2 font-weight-normal text-justify">I create actionable strategies to improve performance through data analysis and visualizations.</h1>
+                    <h1 class="display-5 ml-2 font-weight-normal text-justify"><strong>Ten years of experience Office Management, Data Warehousing, and Strategic Planning.</strong></h1>
+                </div>
+            </div>
+    </div>
+    <div class="jumbotron bg-dark text-white" id="hardskills">
+        <div class="containter-fluid">
+            <div class="row">
+                <div class="col-md">
+                    <h4>Hard Skills</h4>
+                </div>
+            </div>
+            <table class="table table-dark table-striped table-bordered table-hover col-md">
+                <thead>
+                  <tr>
+                  <th>Name</th>
+                  <th>Software or Programming Language</th>
+                  <th>Use</th>
+                </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Tableau</td>
+                    <td>Software</td>
+                    <td>Data Visualization</td>
+                  </tr>
+                  <tr>
+                    <td>HTML</td>
+                    <td>Programming Language</td>
+                    <td>Web development, Web frameworks (<em>Bootstrap</em>).</td>
+                  </tr>
+                  <tr>
+                    <td>Python</td>
+                    <td>Programming Language</td>
+                    <td>Data mining, Data Pulling, Data Analytics. Data Visualization. Social Media Mining. Database Administration. Python Frameworks (<em>Jupyter, Flask</em>) and Libraries (<em>Matplotlib, Beautiful Soup</em>)</td>
+                  </tr>
+                  <tr>
+                    <td>SQL</td>
+                    <td>Programming Language</td>
+                    <td>Data Analytics and Database Administration. Hybrid Applications (<em>SQLAlchemy</em>)</td>
+                  </tr>
+                  <tr>
+                    <td>Application Programming Interface (API)</td>
+                    <td>Programming Language</td>
+                    <td>Data Mining and Analytics</td>
+                  </tr>
+                  <tr>
+                    <td>Javascript</td>
+                    <td>Programming Language</td>
+                    <td>Data Visualization. Libraries (<em>Plotly</em>, <em>D3</em>)</td>
+                  </tr>
+                  <tr>
+                    <td>Cascading Style Sheets (CSS)</td>
+                    <td>Programming Language</td>
+                    <td>Web Styling</td>
+                  </tr>
+                  <tr>
+                    <td>Visual Basic for Applications (VBA)</td>
+                    <td>Software</td>
+                    <td>Data Analytics and Database Administration (including macro programming in <em>Excel</em>)</td>
+                  </tr>
+                  <tr>
+                    <td>Microsoft Suite (Word, Excel, PowerPoint)</td>
+                    <td>Software</td>
+                    <td>Convert to PDF. Spreadsheets, Pivot Tables, Macros. Sales Decks.</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+    <div class="jumbotron bg-light" id="softskills">
+        <div class="containter-fluid">
+            <div class="row">
+                <p class="display-4 font-weight-normal text-justify">I'm an empathetic team player with leadership capability and experience. I  provide strategic insights with results that impact business operations. I am patient, goal-oriented, and flexible enough to course correct when needed.</p>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron bg-dark text-white" id="experience">
+      <div class="containter">
+          <div class="row">
+              <div class="col-sm">
+                  <h4>Experience</h4>
+              </div>
+          </div>
+          <table class="table table-dark table-striped table-bordered table-hover">
+            <tbody>
+              <tr>
+                <td>Guido's Service</td>
+                <td>Office Manager</td>
+                <td>I manage the day to day operations of the office including Administrative, Finance, and IT-related tasks.<br>
+                    I am directly responsible for sensitive information including Client Data, Employee Information, and Company Accounts.<br>
+                    I improved bookkeeping and client management by migrating 10 years of data to Quickbooks Online over a month-long period.<br>
+                    I created processes for Data Entry, Customer Payments, and Purchasing expediting future employee onboarding.<br></td>
+                <td>2015-Present</td>
+              </tr>
+              <tr>
+                <td>Prospanica SF</td>
+                <td>Technology Officer</td>
+                <td>I joined the board in a communications capacity, increasing our outreach by collaborating with other organizations, coordinating membership events, and signal boosting sponsor initiatives through our social media.<br>
+                    Webmaster for the Prospanica SF site using HTML and CSS<br>
+                    Moderator for Prospanica SF Slack Workspace</td>
+                <td>2017-Present</td>
+              </tr>
+              <tr>
+                <td>Best Bay Apartments</td>
+                <td>IT/Operations Manager</td>
+                <td>My role was to improve and maintain the company’s IT infrastructure while running the office’s daily operations and managing a team of 6 employees.<br>
+                    Managed Excel database and key fob system for over 500 residents.</td>
+                <td>2014-2015</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+  </div>  
+  <div class="jumbotron bg-warning text-dark" id="projects">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h4>Projects</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1 class="display-4 font-weight-normal"><strong>Winning an Oscar</strong></h1>
+          <h5>
+            A Machine Learning Predictive Model
+            <br>
+            <br>
+            Project Scope
+          </h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>1.-</strong> Collaborated with a team of four to deliver this app on-time within specifications</li>
+            <li class="list-group-item"><strong>2.-</strong> Created Web Scrapers, transformed data using Pandas, implemented Logarithmic Regression Model</li>
+            <li class="list-group-item"><strong>3.-</strong> Used Python, Jupyter Notebooks, Heroku, HTML, and CSS.</li>
+            <li class="list-group-item"><strong>4.-</strong> http://oscaranalysis.herokuapp.com/</li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <br>
+    </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="thumbnail">
+            <img src="Correlation Analysis.png" style="width:100%">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="thumbnail">
+            <img src="Best Picture.png" style="width:100%">
+          </div>
+        </div>
+      </div>
+<hr>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h1 class="display-4 font-weight-normal"><strong>Surf's Up</strong></h1>
+          <h5>Climate Analysis</h5>
+          <div class="card text-justify">
+            <div class="card-body bg-dark text-white">
+              <strong>Project Scope</strong><br>
+              Used Python and SQLAlchemy for climate analysis and data exploration.<br>
+              Used Pandas and Matplotlib for data merging, data cleaning, and data visualizations.<br>
+              Database Engineering, Data Engineering, Python Analysis, SQL<br>
+              https://github.com/chrisestrada007/Python_SQL_SurfsUp_ClimateAnalysis
+            </div>
+            <div class="row">
+            <div class="col-6">
+              <div class="thumbnail">
+                <img src="Climate Analysis.png" style="vertical-align: middle; max-width:100%; height:auto;">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="thumbnail">
+                <img src="Climate Analysis 2.png" style="vertical-align: middle; max-width:100%; height:auto;">
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="jumbotron bg-light" id="education">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h4>Education</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8">
+          <p class="display-4 font-weight-normal text-justify"><strong>UC Berkeley Extension </strong>(2019)</p><h5> - Data Analytics Bootcamp</h5>
+        </div>
+        <div class="col-3">
+          <img src="UCB.jpg" style="vertical-align: middle; max-width:50%; height:auto;">
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-8">
+        <p class="display-4 font-weight-normal text-justify"><strong>University of San Francisco </strong>(2010)</p><h5> - Bachelor’s Degree in International Business</h5>
+      </div>
+      <div class="col-3">
+        <img src="USF.jpeg" style="vertical-align: middle ; max-width:50%; height:auto;">
+      </div>
+      </div>
+    </div>
+  <div class="jumbotron bg-dark text-white" id="contact">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h4>Contact</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h6>Email: <u>ChrisEstrada007@Gmail.com</u></h6>
+          <h6><a href="https://www.linkedin.com/in/chrisestrada007/" target="blank"><u>LinkedIn</u></a> and <a href="https://github.com/chrisestrada007" target="blank"><u>Github</u></a></h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>               
 </body>
 
 </html>
